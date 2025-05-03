@@ -9,7 +9,7 @@ output_dir="/home/$USR/Downloads"
 output_file="$output_dir/pkgs.list"
 
 # Create directory
-mkdir 
+mkdir $output_dir
 
 # Get the list of installed packages
 installed_packages=$(dpkg --get-selections | cut -f1)
