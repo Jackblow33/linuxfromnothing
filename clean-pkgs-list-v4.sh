@@ -2,8 +2,14 @@
 
 # clean-pkgs-list-v4.sh
 
+USR=$(logname)
+
 # Set the output file path
-output_file="/home/jack/Downloads/pkgs.list"
+output_dir="/home/$USR/Downloads"
+output_file="$output_dir/pkgs.list"
+
+# Create directory
+mkdir 
 
 # Get the list of installed packages
 installed_packages=$(dpkg --get-selections | cut -f1)
